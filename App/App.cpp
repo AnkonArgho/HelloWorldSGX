@@ -31,7 +31,7 @@ int SGX_CDECL main(int argc, char *argv[])
   }
  
   // invoke trusted_func01();
-  HelloWorldFromInside(global_eid);
+ printHelloWorldFromInside(global_eid);
 
   if (ret != SGX_SUCCESS) {
     printf("Enclave call error\n");
